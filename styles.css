@@ -1,0 +1,103 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #444444; /* Fondo gris oscuro */
+}
+
+.container {
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 20px; /* Reducido el espacio entre secciones */
+    border: 20px solid #363671; /* Borde azul oscuro */
+    border-radius: 10px; /* Esquinas redondeadas */
+    padding: 10px; /* Reducido el padding */
+    background-color: #0e6477; /* Fondo blanco para los contenedores */
+}
+
+h1, h2 {
+    text-align: center;
+    text-transform: uppercase; /* Convertir texto a mayúsculas */
+    font-size: 24px; /* Tamaño de fuente aumentado */
+}
+
+h2 {
+    margin-bottom: 10px; /* Reducido el margen inferior */
+    font-weight: bold;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos de forma vertical */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.input-container {
+    display: inline-flex;
+    align-items: center;
+}
+
+.currency-symbol {
+    margin-left: 5px; /* Ajusta el espacio entre el número y el símbolo de la moneda */
+}
+
+.btn-eliminar {
+    display: inline;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    color: red;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.btn-eliminar:hover {
+    color: darkred;
+}
+
+input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 5px;
+    margin-top: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 8px 20px;
+    background-color: #000080; /* Botón azul oscuro */
+    color: #fff; /* Texto blanco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase; /* Convertir texto a mayúsculas */
+    animation: pulse 2s infinite alternate; /* Animación para los botones */
+}
+
+/* Estilo para el botón de eliminar */
+.btn-eliminar {
+    display: inline; /* Hacer que el botón sea en línea */
+    width: auto; /* Ancho automático */
+    height: auto; /* Altura automática */
+    padding: 0; /* Sin relleno */
+    margin: 0; /* Sin margen */
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    color: red; /* Color de la "x" en rojo */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 1em; /* Tamaño de la "x" igual al tamaño del texto */
+    cursor: pointer; /* Cursor de puntero */
+}
+
+/* Cambio de estilo al pasar el ratón sobre el botón */
+.btn-eliminar:hover {
+    color: darkred; /* Cambio de color al pasar el ratón */
+}

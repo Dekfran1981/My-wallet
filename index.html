@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY BLACK LIST</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MY BLACK WALLET</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="section" id="acciones">
+                <h2>ACCIONES</h2>
+                <div class="info-container">
+                    <div class="acciones-controls">
+                        <label for="realizar-pago"> GASTOS:</label>
+                        <div class="input-container">
+                            <input type="number" id="realizar-pago" min="0" step="0.01" value="">
+                            <span class="currency-symbol">€</span>
+                        </div>
+                        <button id="realizar-pago-btn">REGISTRAR</button>
+                        <label for="agregar-fondos"> FONDOS:</label>
+                        <div class="input-container">
+                            <input type="number" id="agregar-fondos" min="0" step="0.01" value="">
+                            <span class="currency-symbol">€</span>
+                        </div>
+                        <button id="agregar-fondos-btn">AGREGAR</button>
+                    </div>
+                    <button id="reset-saldo-disponible-btn">Reiniciar Saldo Disponible</button>
+                </div>
+            </div>
+            <div class="section" id="transacciones">
+                <h2>ÚLTIMOS GASTOS</h2>
+                <div class="info-container">
+                    <ul id="lista-transacciones">
+                        <!-- Lista de gastos se generará dinámicamente aquí -->
+                    </ul>
+                </div>
+            </div>
+            <div class="section" id="saldo">
+                <h2>SALDO</h2>
+                <div class="info-container">
+                    <div class="saldo-info">
+                        <p>SALDO TOTAL: <span id="saldo-total" contenteditable="true">$0.00</span></p>
+                        <p>SALDO DISPONIBLE: <span id="saldo-disponible" contenteditable="true">$0.00</span></p>
+                        <button id="actualizar-saldos-btn">Actualizar Saldos</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 al infinity mas haya company derechos reservados </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
